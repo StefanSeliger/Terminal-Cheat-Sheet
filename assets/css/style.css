@@ -34,6 +34,11 @@ h3 {
     font-size: 4rem;
 }
 
+h1, h2, h3 {
+    text-decoration: underline;
+    padding-top: 3vh; 
+}
+
 p {
     font-size: 2.5rem;
     margin: 3vh auto; 
@@ -41,7 +46,7 @@ p {
 
 img {
     text-align: center;
-    width: 65vw; 
+    width: 65vw;  
 }
 
 /* ============================== 
@@ -79,14 +84,14 @@ aside nav ul li {
     display: inline-block; 
 }
 
-a {
+aside nav ul li a {
     font-size: 2rem;
     text-decoration: none;
     color: white; 
     padding-left: 2vw;
 }
 
-a:hover {
+aside nav ul li a:hover {
     text-decoration: underline;
 }
 
@@ -129,6 +134,6 @@ main div section:last-of-type {
 
 main div section {
     width: 80vw; 
-    margin: 3vh auto; 
+    margin: 0 auto; 
 }
 

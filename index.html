@@ -13,7 +13,9 @@
     <header>
         <div>
             <h1>Terminal Cheat Sheet</h1>
-            <p>In VS Code kann man ganz ohne Maus zwischen Verzeichnissen und Dateien springen, diese bearbeiten, umbenennen und sogar löschen. Dazu öffnet man entweder unten das Termial oder ganz oben, über die Menüleiste.</p>
+            <p>In VS Code kann man ganz ohne Maus zwischen Verzeichnissen und Dateien springen, diese bearbeiten,
+                umbenennen und sogar löschen. Dazu öffnet man entweder unten das Termial oder ganz oben, über die
+                Menüleiste.</p>
         </div>
     </header>
     <aside>
@@ -30,19 +32,20 @@
     <main>
         <div id="neu">
             <h2>NEUE DATEIEN UND ORDNER ANLEGEN</h2>
-            <section class="neuanlegen">
+            <section>
                 <h3>Neue Datei in VS Code anlegen</h3>
                 <p>Über den Befehl "touch" kann im Terminal eine neue Datei angelegt werden.</p>
+                <a href=""></a>
                 <img src="assets/img/touch.png" alt="touch">
             </section>
-            <section class="neuanlegen">
+            <section>
                 <h3>Neuen Ordner in VS Code anlegen</h3>
                 <p>Über den Befehl "mkdir" kann im Terminal eine neue Datei angelegt werden.</p>
                 <img src="assets/img/mkdir.png" alt="mkdir">
             </section>
-            <section class="neuanlegen">
+            <section>
                 <h3>Mehrere neue Ordner gleichzeitig in VS Code anlegen.</h3>
-                <p></p>
+                <p>Über den Befehl "mkdir -p parentordner/kindordner/etc." kann im Terminal eine neue Datei angelegt werden.</p>
                 <img src="assets/img/mkdir mehrere ordner.png" alt="mkdirp">
             </section>
         </div>
@@ -50,9 +53,11 @@
             <h2>PFAD UND NAVIGATION</h2>
             <section>
                 <h3>Pfad in Verzeichnisse & Verzeichnisse wechseln</h3>
-                <p>Über den Befehl "cd" kann im Terminal zu einem bestimmten Ordner, oder einer bestimmten Datei gelangen.</p>
+                <p>Über den Befehl "cd" kann im Terminal zu einem bestimmten Ordner, oder einer bestimmten Datei
+                    gelangen.</p>
                 <img src="assets/img/cd.png" alt="cd">
-                <p>Außerdem kann man mit dem Befehl "cd" wieder aus dem Ordner zurück, in übergeordnete Ordner navigieren.</p>
+                <p>Außerdem kann man mit dem Befehl "cd" wieder aus dem Ordner zurück, in übergeordnete Ordner
+                    navigieren.</p>
                 <img src="assets/img/cd backwards.png" alt="cdbackwarts">
             </section>
         </div>
@@ -60,10 +65,16 @@
             <h2>INHALT ZEIGEN UND LESEN</h2>
             <section>
                 <h3>Inhalte von Ordner anzeigen</h3>
-                <p>Über den Befehl "ls" kann im Terminal lesen welche Dateien oder Ordner sich in einem übergeordneten Ordner befinden.</p>
+                <p>Über den Befehl "ls" kann im Terminal lesen welche Dateien oder Ordner sich in einem übergeordneten
+                    Ordner befinden.</p>
                 <img src="assets/img/ls.png" alt="ls">
                 <p>Über den Befehl "ls -a" kann man sich außerdem versteckte Dateien und Ordner anzeigen lassen.</p>
                 <img src="assets/img/ls_a.png" alt="lsa">
+            </section>
+            <section>
+                <h3>Wo befinde ich mich?</h3>
+                <p>Über den Befehl "pwd" kann im Terminal anzeigen lassen, in welchem Ordner ich mich genau befinde.</p>
+                <img src="assets/img/pwd.png" alt="pwd">
             </section>
             <section>
                 <h3>Inhalte von Datein lesen</h3>
@@ -75,18 +86,25 @@
             <h2>BEWEGEN UND ÄNDERN</h2>
             <section>
                 <h3>Dateien und Ordner bewegen, bzw. Namen ändern</h3>
-                <p>Über den Befehl "mv" kann im Terminal einen Ordner, oder eine Datei, bewegt und dabei auch gleizeit der Namen geändert werden. Für letzteres gibt man bei der Definition des Ziels einfach einen neuen Namen für den Ordner, oder die Datei, an.</p>
+                <p>Über den Befehl "mv Quelle Ziel (eventuell eine Änderung)" kann im Terminal einen Ordner, oder eine Datei, bewegt und dabei auch gleizeit
+                    der Namen geändert werden. Für letzteres gibt man bei der Definition des Ziels einfach einen neuen
+                    Namen für den Ordner, oder die Datei, an.</p>
                 <img src="assets/img/mv.png" alt="mv">
             </section>
             <section>
                 <h3>Dateien und Ordner kopieren, bewegen und Namen ändern</h3>
-                <p>Über den Befehl "cp" kann im Terminal einen Ordner, oder eine Datei, bewegen und kopieren und dabei gleichzeitig den Namen ändern. Man gibt hier ebenfalls beim Ziel einfach einen neuen Namen an. Bspw.: assets/img/bild1.jpeg zu assets/img/bild2.jpeg.</p>
+                <p>Über den Befehl "cp Quelle Ziel (eventuell eine Änderung)" kann im Terminal einen Ordner, oder eine Datei, bewegen und kopieren und dabei
+                    gleichzeitig den Namen ändern. Man gibt hier ebenfalls beim Ziel einfach einen neuen Namen an.
+                    Bspw.: assets/img/bild1.jpeg zu assets/img/bild2.jpeg.</p>
                 <img src="assets/img/cp.png" alt="cp">
             </section>
         </div>
         <div id="loeschen">
             <h2>LÖSCHEN</h2>
-            <p>Hierbei gilt unbedingt zu beachten, dass alles was gelöscht wird unwideruflich gelöscht wird. Daher sollte man diese Befehle wirklich nur sehr vorsichtig einsetzten!!</p>
+            <section>
+                <p>Hierbei gilt unbedingt zu beachten, dass alles was gelöscht wird unwideruflich gelöscht wird. Daher
+                    sollte man diese Befehle wirklich nur sehr vorsichtig einsetzten!!</p>
+            </section>
             <section class="löschen">
                 <h3>Datei in VS Code löschen</h3>
                 <p>Über den Befehl "rm" kann im Terminal eine Datei löschen.</p>
