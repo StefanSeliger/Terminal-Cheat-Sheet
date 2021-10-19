@@ -54,7 +54,7 @@ img {
 ============================== */
 header {
     text-align: center;
-    background-color: lightcoral;
+    background-color: brown;
     height: 40vh; 
 }
 
@@ -69,7 +69,7 @@ header div {
         Navigation Styles
 ============================== */
 aside {
-    background: darkgray; 
+    background: grey; 
     position: sticky; 
     top: 0; 
     bottom: 0; 
@@ -99,27 +99,27 @@ aside nav ul li a:hover {
         Main Styles
 ============================== */
 #neu {
-    background: lightgreen; 
+    background: darkcyan;  
     color: white; 
 }
 
 #pfad {
-    background: lightblue; 
+    background: darkslategrey; 
     color: white; 
 }
 
 #inhalt {
-    background: lightsalmon; 
+    background: darkolivegreen; 
     color: white; 
 }
 
 #aendern {
-    background: lightslategrey; 
+    background: darkslateblue; 
     color: white; 
 }
 
 #loeschen {
-    background: lightseagreen; 
+    background: darkred; 
     color: white; 
 }
 
