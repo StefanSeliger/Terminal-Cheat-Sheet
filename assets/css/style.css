@@ -1,0 +1,134 @@
+/* ============================== 
+        General Styles
+============================== */
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+/* Font Family
+font-family: 'Roboto', sans-serif;
+*/
+
+* {
+    margin: 0; 
+    padding: 0; 
+    box-sizing: border-box;
+}
+
+html {
+    font-family: 'Roboto', sans-serif;
+    font-size: 10px;
+    font-weight: normal;
+    scroll-behavior: smooth;
+}
+
+h1 {
+    font-size: 8rem;
+    padding-top: 5vh;
+}
+
+h2 {
+    font-size: 4.5rem;
+}
+
+h3 {
+    font-size: 4rem;
+}
+
+p {
+    font-size: 2.5rem;
+    margin: 3vh auto; 
+}
+
+img {
+    text-align: center;
+    width: 65vw; 
+}
+
+/* ============================== 
+        Header Styles
+============================== */
+header {
+    text-align: center;
+    background-color: lightcoral;
+    height: 40vh; 
+}
+
+
+header div {
+    margin: 0 auto; 
+    color: white; 
+    width: 80vw; 
+}
+
+/* ============================== 
+        Navigation Styles
+============================== */
+aside {
+    background: darkgray; 
+    position: sticky; 
+    top: 0; 
+    bottom: 0; 
+}
+
+aside nav ul {
+    list-style: none;
+    text-align: center;
+}
+
+aside nav ul li {
+    display: inline-block; 
+}
+
+a {
+    font-size: 2rem;
+    text-decoration: none;
+    color: white; 
+    padding-left: 2vw;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* ============================== 
+        Main Styles
+============================== */
+#neu {
+    background: lightgreen; 
+    color: white; 
+}
+
+#pfad {
+    background: lightblue; 
+    color: white; 
+}
+
+#inhalt {
+    background: lightsalmon; 
+    color: white; 
+}
+
+#aendern {
+    background: lightslategrey; 
+    color: white; 
+}
+
+#loeschen {
+    background: lightseagreen; 
+    color: white; 
+}
+
+main div h2 {
+    text-align: center;
+    padding-top: 10vh; 
+}
+
+main div section:last-of-type {
+    padding-bottom: 10vh; 
+}
+
+main div section {
+    width: 80vw; 
+    margin: 3vh auto; 
+}
+
