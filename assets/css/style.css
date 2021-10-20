@@ -49,27 +49,56 @@ img {
     width: 65vw;  
 }
 
+span {
+    font-weight: bold;
+}
+
 /* ============================== 
         Header Styles
 ============================== */
 header {
     text-align: center;
-    background-color: brown;
-    height: 40vh; 
+    background-color: rgb(150, 105, 102);
+    height: 60vh; 
 }
 
 
 header div {
     margin: 0 auto; 
-    color: white; 
+    color: rgb(3, 44, 53); 
     width: 80vw; 
+}
+
+header div a {
+    font-size: 1.5rem;
+    color: rgb(3, 44, 53); 
+    background-color: rgb(182, 217, 225); 
+    text-decoration: none;
+    padding: 4px 8px; 
+    border-radius: 5px; 
+    margin-left: 3vw; 
+}
+
+header div a:hover {
+    box-shadow: 0 0 2px 2px red;
+}
+
+header div ul {
+    list-style: none;
+    margin: 5vh auto; 
+}
+
+header div ul li{
+
+    font-size: 2rem;
+    font-style: italic;
 }
 
 /* ============================== 
         Navigation Styles
 ============================== */
 aside {
-    background: peru; 
+    background: rgb(255, 0, 0); 
     position: sticky; 
     top: 0; 
     bottom: 0; 
@@ -98,28 +127,28 @@ aside nav ul li a:hover {
 /* ============================== 
         Main Styles
 ============================== */
-#neu {
-    background: darkcyan;  
+#div1 {
+    background: rgb(3, 44, 53);  
     color: white; 
 }
 
-#pfad {
+#div2 {
     background: darkslategrey; 
     color: white; 
 }
 
-#inhalt {
-    background: darkolivegreen; 
+#div3 {
+    background: rgb(3, 44, 53); 
     color: white; 
 }
 
-#aendern {
-    background: darkslateblue; 
+#div4 {
+    background: darkslategrey; 
     color: white; 
 }
 
-#loeschen {
-    background: darkred; 
+#div5 {
+    background: rgb(3, 44, 53); 
     color: white; 
 }
 

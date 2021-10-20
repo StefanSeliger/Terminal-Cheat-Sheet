@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GIT Cheat Sheet</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body>
+    <header>
+        <div>
+            <h1>GIT Cheat Sheet</h1>
+            <p><span>Was ist Git?</span> - Git ist ein Versionverwaltungstool, das bei jedem comitten eine Art
+                Schnappschuss von deinem Projekt macht. Hinterher hat man einen Stapel von Schnappschüssen.
+            </p>
+            <ul>
+                <li><span>Lokal = Working Directory</span> Änderungen werden als Modified dargestellt</li>
+                <li><span>Staged Area = Index</span> Daten werden für den commit vorgemerkt sind aber noch nicht
+                    hochgeladen</li>
+                <li><span>.git directory repository</span> Daten sind von lokal auf git geklont worden und stehen als
+                    snapshot bereit
+                </li>
+            </ul>
+            <a href="../../index.html">Terminal Cheat Sheet</a>
+            <a href="https://git-scm.com/book/de/v2/Erste-Schritte-Was-ist-Git%3F">Mehr Infos zu Git</a>
+        </div>
+    </header>
+    <aside>
+        <nav>
+            <ul>
+                <li><a href="#div1">CONNECTION VS CODE MIT GIT</a></li>
+                <li><a href="#div2">ANZEIGE BEFEHLE</a></li>
+                <li><a href="#div3">BRANCHES</a></li>
+                <li><a href="#div4">MERGE</a></li>
+                <li><a href="#div5">KLONEN & HERUNTERLADEN</a></li>
+            </ul>
+        </nav>
+    </aside>
+    <main>
+        <div id="div1">
+            <h2>CONNECTION VS CODE MIT GIT</h2>
+            <section>
+                <h3>Lokales Git Repository erstellen</h3>
+                <p>Über den Befehl "git init" wird im Terminal ein lokes Git Respository erstellt.</p>
+                <img src="../img/gitimg/gitinit.png" alt="gitinit">
+            </section>
+            <section>
+                <h3>Daten für die Zwischenablage (Staged Area/Index) vobereiten</h3>
+                <p>Über den Befehl "git add ." werden die Projektdaten für die Zischenablage vorbereitet. Wobei der "."
+                    dafür steht alle Daten zu erfassen.</p>
+                <img src="../img/gitimg/gitadd.png" alt="gitadd">
+            </section>
+            <section>
+                <h3>Upload Message hinzufügen und Git Daten einfügen</h3>
+                <p>Über den Befehl "git commit -m "Message" wird eine Message für den Upload hinzugefügt. Hier ist es
+                    wichtig eine sinnvolle Bezeichnung, wie bspw. First Upload, oder Update1, zu wählen.</p>
+                <img src="../img/gitimg/gitcommit.png" alt="gitcommit">
+                <p>Um das Git Respository mit dem lokalen Git Ordner zu verbinden, kopiert man bei Git die Verbindung
+                    und fügt sie im Terminal ein. Danach ist der erste Upload abgeschlossen.</p>
+                <img src="../img/gitimg/gitlink.png" alt="gitlink">
+            </section>
+            <section>
+                <h3>Update des Git Respositories</h3>
+                <p>Um ein Update des Git Respositories durchzuführen benötigt man lediglich die Schritte "git add .",
+                    "git commit -m "update" und zusätzlich "git push".</p>
+                <img src="../img/gitimg/gitpush.png" alt="gitpush">
+            </section>
+        </div>
+        <div id="div2">
+            <h2>ANZEIGE BEFEHLE</h2>
+            <section>
+                <h3>Anzeige der bisheringen Commits</h3>
+                <p>Über den Befehl "git log" kann man sich eine ausführliche Aufstellung aller bisherigen Commits
+                    anzeigen lassen. Der Befehl "git lot --oneline" zeigt die gekürzte Fassung.</p>
+                <img src="../img/gitimg/gitlogoneline.png" alt="gitlog">
+            </section>
+            <section>
+                <h3>Anzeige der erstellten Branches</h3>
+                <p>Über den Befehl "git branch" kann man sich alle verwendeten Branches eines Projekts anzeigen lassen.
+                </p>
+                <img src="../img/gitimg/gitbranch.png" alt="gitbranch">
+                <p>Weitere Befehle sind "git status" und "git diff". Beide geben Auskunft über Änderungen am Projekt.
+                </p>
+            </section>
+        </div>
+        <div id="div3">
+            <h2>BRANCHES</h2>
+            <section>
+                <p>Über verschiedene Branches eines Projektes können mehrere Developer an einem Projekt gleichzeitig
+                    arbeiten. Die Rolle des Git Masters ist dabei sehr wichtig, da er später die Zusammenführung der
+                    verschiedenen Branches im Überblick haben muss.</p>
+            </section>
+            <section>
+                <h3>Neue Branches erstellen</h3>
+                <p>Über den Befehl "git branch "Branchname"" erstellt man im Terminal (und über Commit auch bei Git)
+                    neue Branches.</p>
+                <img src="../img/gitimg/gitbranchneu.png" alt="gitbranchneu">
+            </section>
+            <section>
+                <h3>Branches löschen</h3>
+                <p>Über den Befehl "git branch -d "Branchname"" wird der ausgewählte Branch undwiederruflich gelöscht.
+                    <span>Mit Vorsicht zu verwenden.</span></p>
+                <img src="../img/gitimg/gitbranchloeschen.png" alt="gitbranchloeschen">
+            </section>
+            <section>
+                <h3>Zwischen Branches wechseln</h3>
+                <p>Über den Befehl "git checkout " wechselt man zwischen verschiedenen Branches. Die Grüne mit Sternchen ist dabei die, in der man sich befindet. 
+                </p>
+                <img src="../img/gitimg/gitcheckout.png" alt="gitcheckout">
+            </section>
+        </div>
+        <div id="div4">
+            <h2>MERGE</h2>
+            <section>
+                <h3>Branches mergen</h3>
+                <p>Ist die Entwicklung eines Branches abgeschlossen und ist dieser auch ausreichend getestet, kann er
+                    mit dem Main Branch wieder zusammengeführt werden. Dafür begibt man sich in den Main/Master Branch.
+                    Über den Befehl "git merge Branchname" wird dann der bearbeite Branch eingefügt.</p>
+                <img src="../img/gitimg/gitmerge.png" alt="gitmerge">
+            </section>
+        </div>
+        <div id="div5">
+            <h2>KLONEN & HERUNTERLADEN</h2>
+            <section class="löschen">
+                <h3>Git Projekt herunterladen</h3>
+                <p>Über den Befehl "git pull Link" kann man ein Git Projekt in VS Code herunterladen. Dafür wird ein Link des Projekts von Git benötigt.</p>
+                <img src="../img/gitimg/gitpull.png" alt="gitpull">
+            </section>
+            <section class="löschen">
+                <h3>Git Projekt klonen</h3>
+                <p>Über den Befehl "git clone Link" kann man ein Git Projekt in VS Code klonen. Dafür wird ebenfalls ein Link des Projekts von Git benötigt.</p>
+                <img src="../img/gitimg/gitclone.png" alt="gitclone">
+            </section>
+        </div>
+    </main>
+
+
+</body>
+
+</html>
