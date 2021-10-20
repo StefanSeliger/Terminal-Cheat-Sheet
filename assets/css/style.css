@@ -76,7 +76,7 @@ header div a {
     text-decoration: none;
     padding: 4px 8px; 
     border-radius: 5px; 
-    margin-left: 3vw; 
+    margin: 0 3vw; 
 }
 
 header div a:hover {
@@ -89,7 +89,6 @@ header div ul {
 }
 
 header div ul li{
-
     font-size: 2rem;
     font-style: italic;
 }
@@ -117,7 +116,7 @@ aside nav ul li a {
     font-size: 2rem;
     text-decoration: none;
     color: white; 
-    padding-left: 2vw;
+    padding: 0 1vw;
 }
 
 aside nav ul li a:hover {
@@ -150,6 +149,10 @@ aside nav ul li a:hover {
 #div5 {
     background: rgb(3, 44, 53); 
     color: white; 
+}
+
+.underlinered {
+    text-decoration: underline red;
 }
 
 main div h2 {
